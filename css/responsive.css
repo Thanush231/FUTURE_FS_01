@@ -1,0 +1,205 @@
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS (FUTURE_FS_01)
+   ========================================================================== */
+
+/* Large Tablets & Small Laptops (<= 1024px) */
+@media screen and (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .hero-bio {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-cta-group {
+    justify-content: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    margin-top: 1rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablets & Mobile Devices (<= 768px) */
+@media screen and (max-width: 768px) {
+  .section-padding {
+    padding: 4rem 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .hero-name {
+    font-size: 2.8rem;
+  }
+
+  .hero-role-wrapper {
+    font-size: 1.4rem;
+  }
+
+  /* Mobile Navigation Drawer */
+  .mobile-menu-btn {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 320px;
+    height: 100vh;
+    background: var(--bg-card);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border-left: 1px solid var(--border-color);
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    transition: right var(--transition-normal);
+    box-shadow: var(--shadow-lg);
+    z-index: 1001;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-card {
+    padding: 1.8rem;
+  }
+
+  .hero-avatar-card {
+    max-width: 320px;
+  }
+
+  .hero-image-wrapper {
+    height: 340px;
+  }
+
+  .badge-top-right {
+    right: -8px;
+    top: -10px;
+    padding: 0.45rem 0.85rem;
+  }
+
+  .badge-bottom-left {
+    left: -8px;
+    bottom: 45px;
+    padding: 0.45rem 0.85rem;
+  }
+
+  .badge-bottom-pill {
+    bottom: -14px;
+    font-size: 0.78rem;
+    padding: 0.4rem 1rem;
+  }
+
+  .hero-code-mini {
+    max-width: 320px;
+  }
+
+  .about-photo-wrapper {
+    height: 280px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.2rem;
+  }
+}
+
+/* Small Phones (<= 480px) */
+@media screen and (max-width: 480px) {
+  .hero-name {
+    font-size: 2.2rem;
+  }
+
+  .hero-role-wrapper {
+    font-size: 1.15rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+  }
+
+  .hero-avatar-card {
+    max-width: 280px;
+  }
+
+  .hero-image-wrapper {
+    height: 300px;
+  }
+
+  .floating-badge {
+    padding: 0.4rem 0.75rem;
+    gap: 0.5rem;
+  }
+
+  .badge-title {
+    font-size: 0.78rem;
+  }
+
+  .badge-subtitle {
+    font-size: 0.68rem;
+  }
+
+  .badge-bottom-pill {
+    font-size: 0.72rem;
+    padding: 0.35rem 0.8rem;
+  }
+
+  .hero-code-mini {
+    max-width: 280px;
+  }
+
+  .about-photo-wrapper {
+    height: 240px;
+  }
+
+  .filter-container {
+    gap: 0.5rem;
+  }
+
+  .filter-btn {
+    padding: 0.45rem 1rem;
+    font-size: 0.82rem;
+  }
+}
